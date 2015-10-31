@@ -1,0 +1,59 @@
+<!doctype html>
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}
+      %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+        %link{:href => "http://fonts.googleapis.com/css?family=Vollkorn|Open+Sans:400,700", :rel => "stylesheet", :type => "text/css"}
+          %link{:href => "//cloud.typography.com/6077492/651366/css/fonts.css", :rel => "stylesheet", :type => "text/css"}/
+          %link{:href => "css/reset.css", :rel => "stylesheet"}
+            / CSS reset
+            %link{:href => "css/style.css", :rel => "stylesheet"}
+              / Resource style
+              %script{:src => "js/modernizr.js"}
+              / Modernizr
+              %title Rob Draper - Designer + Front-End Developer
+  %body
+    %main.main
+      %header
+        %h1
+          Rob Draper
+          %span Designer + Front-End Developer
+      %ul.gallery
+        %li.item
+          %a{:href => "about.html"}
+            %div
+              %h2 About
+              / <p></p>
+              %b Click to learn more
+        %li.item
+          %a{:href => "#0"}
+            %div
+              %h2 Work
+              / <p></p>
+              %b Coming soon...
+        %li.item
+          %a{:href => "#0"}
+            %div
+              %h2 Contact
+              / <p></p>
+              %b Coming soon...
+        %li.item
+          %a{:href => "#0"}
+            %div
+              %h2 Resume
+              / <p></p>
+              %b Coming soon...
+      / .gallery
+    / .main
+    .folding-panel
+      .fold-left
+      / this is the left fold
+      .fold-right
+      / this is the right fold
+      .fold-content
+        / content will be loaded using javascript
+      %a.close{:href => "#0"}
+    / .folding-panel
+    %script{:src => "js/jquery-2.1.1.js"}
+    %script{:src => "js/main.js"}
+    / Resource jQuery
