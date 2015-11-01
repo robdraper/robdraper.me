@@ -70,7 +70,7 @@ Main content
 .main {
   overflow-x: hidden; }
   l
-  .main::before {
+.main::before {
     /* never visible - this is used in jQuery to check the current MQ */
     display: none;
     content: 'mobile'; }
@@ -112,6 +112,7 @@ Main content
   clear: both;
   content: "";
   display: table; }
+
 .gallery::before {
   /* this is the dark layer covering the .gallery when the .folding-panel is open */
   display: block;
@@ -128,6 +129,7 @@ Main content
   -webkit-transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
   -moz-transition: opacity 0.5s 0.4s, visibility 0s 0.9s;
   transition: opacity 0.5s 0.4s, visibility 0s 0.9s; }
+
 .fold-is-open .gallery::before {
   visibility: visible;
   opacity: 1;
@@ -341,7 +343,8 @@ folding panel
     -webkit-transition: opacity 0.2s 0s;
     -moz-transition: opacity 0.2s 0s;
     transition: opacity 0.2s 0s; }
-    .folding-panel .close::after, .folding-panel .close::before {
+    .folding-panel .close::after,
+    .folding-panel .close::before {
       /* lines of 'X' icon */
       content: '';
       position: absolute;
@@ -441,13 +444,14 @@ folding panel
           -o-transform: translateX(100%) rotateY(90deg);
           transform: translateX(100%) rotateY(90deg); } }
 
+/* Set the fold content */
 .fold-content {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 4em 2em;
+  padding: 2em 1em;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.4s;
   -moz-transition: visibility 0s 0.4s;
@@ -498,6 +502,7 @@ folding panel
       -o-transform: translateY(0);
       transform: translateY(0); }
     .is-open .fold-content h2 {
+      font-size: 6rem;
       -webkit-transition: -webkit-transform 0.2s 0.5s, opacity 0.2s 0.5s;
       -moz-transition: -moz-transform 0.2s 0.5s, opacity 0.2s 0.5s;
       transition: transform 0.2s 0.5s, opacity 0.2s 0.5s; }
@@ -544,5 +549,3 @@ Javascript disabled
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0); }
-
-/*# sourceMappingURL=style.css.map */

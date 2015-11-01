@@ -448,13 +448,14 @@ folding panel
 	}
 }
 
+/* Set the fold content */
 .fold-content {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	padding: 4em 2em;
+	padding: 2em 1em;
 
 	visibility: hidden;
 	@include transition(visibility 0s $fold-content-animation);
@@ -504,7 +505,7 @@ folding panel
 		}
 
 		h2 {
-
+			font-size: 6rem;
 			@include transition(transform $fold-content-animation/2 $fold-animation, opacity $fold-content-animation/2 $fold-animation);
 		}
 
