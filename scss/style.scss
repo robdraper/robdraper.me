@@ -448,14 +448,13 @@ folding panel
 	}
 }
 
-/* Set the fold content */
 .fold-content {
 	position: absolute;
 	top: 0;
 	left: 0;
 	height: 100%;
 	width: 100%;
-	padding: 2em 1em;
+	padding: 4em 2em;
 
 	visibility: hidden;
 	@include transition(visibility 0s $fold-content-animation);

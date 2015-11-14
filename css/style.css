@@ -444,14 +444,13 @@ folding panel
           -o-transform: translateX(100%) rotateY(90deg);
           transform: translateX(100%) rotateY(90deg); } }
 
-/* Set the fold content */
 .fold-content {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  padding: 2em 1em;
+  padding: 4em 2em;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.4s;
   -moz-transition: visibility 0s 0.4s;
